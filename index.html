@@ -3,10 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Music Records</title>
 </head>
 <body>
-    <h1>h1</h1>
+    <select id="sort-select">
+        <option value="">--- Sort Records ---</option>
+        <option value="title-asc">Title (A - Z)</option>
+        <option value="title-desc">Title (Z - A)</option>
+        <option value="year-asc">Year (Oldest First)</option>
+        <option value="year-desc">Sort by Year (Newest First)</option>
+    </select>
+    
+     <!-- search bar -->
+     <input type="text" id="search-input" placeholder="Search by title or artist...">
+     <!-- form to add record -->
+    <form action="" id="record-form">
+        <input type="text" id="title" placeholder="Title">
+        <input type="text" id="artist" placeholder="Artist" required>
+        <input type="number" name="" id="year" placeholder="Year" required>
+        <input type="text" id="genre" placeholder="Genre" required>
+        <button type="submit">Add Record</button>
+    </form>
+   
+
+    <div id="record-list">
+        
+    </div>
+
     <script src="./script.js"></script>
 </body>
 </html>
